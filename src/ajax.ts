@@ -12,8 +12,8 @@ export function ajax({
   method = 'get',
   url = '',
   data = {},
-  success = (res) => {},
-  failed = (res) => {},
+  success = (res) => { },
+  failed = (res) => { },
 }: IParams) {
   // @ts-ignore
   const xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');

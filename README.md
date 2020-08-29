@@ -1,7 +1,8 @@
 ## browser-request-utils
+
 浏览器通讯类工具，如 jsonp、ajax 封装等
 
-## Installment 
+## Installment
 
 ```sh
 npm install browser-request-utils --save
@@ -11,7 +12,7 @@ npm install browser-request-utils --save
 
 ```ts
 interface IPromiseAjaxParams {
-  method: 'get' | 'post' | 'GET' | 'POST';
+  method: "get" | "post" | "GET" | "POST";
   url: string;
   data: Record<string, any>;
 }
@@ -22,19 +23,21 @@ interface IParams extends IPromiseAjaxParams {
 }
 
 interface IJsonpParams {
-	url: string;
-	charset?: string;
+  url: string;
+  charset?: string;
   onsuccess: (res: any) => void;
   onerror?: () => void;
 }
 ```
 
 ### ajax
- * @desc ajax 请求工具
- * @param {IParams} params
- * @returns {void}
+
+- @desc ajax 请求工具
+- @param {IParams} params
+- @returns {void}
 
 #### Usage
+
 ```js
   ajax({
     method = 'get',
@@ -53,11 +56,13 @@ interface IJsonpParams {
 ```
 
 ### promiseAjax
- * @desc ajax 请求工具，支持 Promise
- * @param {IPromiseAjaxParams} params
- * @returns {void}
+
+- @desc ajax 请求工具，支持 Promise
+- @param {IPromiseAjaxParams} params
+- @returns {void}
 
 #### Usage
+
 ```js
   promiseAjax({
     method = 'get',
@@ -74,11 +79,13 @@ interface IJsonpParams {
 ```
 
 ### jsonp
- * @desc jsonp 函数
- * @param {IJsonpParams} params
- * @returns {void}
+
+- @desc jsonp 函数
+- @param {IJsonpParams} params
+- @returns {void}
 
 #### Usage
+
 ```js
   jsonp({
     url: 'https://www.npmjs.com/package/browser-request-utils?',
