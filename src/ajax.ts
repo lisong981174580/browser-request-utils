@@ -81,7 +81,7 @@ interface IPromiseAjaxParams {
 
 /**
  * @desc ajax 请求工具，支持 Promise
- * @param {IParams} params
+ * @param {IPromiseAjaxParams} params
  * @returns {void}
  */
 export function promiseAjax(params: IPromiseAjaxParams) {
