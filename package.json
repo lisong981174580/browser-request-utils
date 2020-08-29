@@ -1,0 +1,40 @@
+{
+  "name": "browser-request-utils",
+  "version": "1.0.0",
+  "description": "browser-request-utils",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && npx babel src -d lib -x \".ts, .tsx\"",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisong981174580/browser-request-utils.git"
+  },
+  "keywords": [
+    "ajax",
+    "jsonp"
+  ],
+  "author": "lisong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisong981174580/browser-request-utils/issues"
+  },
+  "homepage": "https://github.com/lisong981174580/browser-request-utils#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4"
+  }
+}
