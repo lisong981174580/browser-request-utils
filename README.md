@@ -102,12 +102,12 @@ interface IJsonpParams {
     onerror: () => {
       // 出错了
     }
+  })
 
-    // 需要服务端根据 callback 名称返回一个代码块，例如
-    callbackname({
-      res: {
-        a: 123,
-      }
-    })
+  // 需要服务端根据 callback 名称返回一个代码块，例如
+  callbackname({
+    res: {
+      a: 123,
+    }
   })
 ```
