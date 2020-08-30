@@ -39,6 +39,8 @@ interface IJsonpParams {
 #### Usage
 
 ```js
+  import { ajax } from 'browser-request-utils';
+
   ajax({
     method = 'get',
     url = 'https://www.npmjs.com/',
@@ -64,6 +66,8 @@ interface IJsonpParams {
 #### Usage
 
 ```js
+  import { promiseAjax } from 'browser-request-utils';
+
   promiseAjax({
     method = 'get',
     url = 'https://www.npmjs.com/',
@@ -87,6 +91,8 @@ interface IJsonpParams {
 #### Usage
 
 ```js
+  import { jsonp } from 'browser-request-utils';
+
   jsonp({
     url: 'https://www.npmjs.com/package/browser-request-utils?',
     charset = 'UTF-8',
