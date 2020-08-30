@@ -1,6 +1,6 @@
 {
   "name": "browser-request-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "浏览器通讯类工具，如 jsonp、ajax 封装等",
   "main": "./lib/index.js",
   "scripts": {
