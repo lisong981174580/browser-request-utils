@@ -42,16 +42,16 @@ interface IJsonpParams {
   import { ajax } from 'browser-request-utils';
 
   ajax({
-    method = 'get',
-    url = 'https://www.npmjs.com/',
-    data = {
+    method: 'get',
+    url: 'https://www.npmjs.com/',
+    data: {
       mobile: 18165057632,
       page: 2
     },
-    success = (res) => {
+    success: (res) => {
       console.log(res);
     },
-    failed = (error) => {
+    failed: (error) => {
       console.error(error);
     },
   })
@@ -69,9 +69,9 @@ interface IJsonpParams {
   import { promiseAjax } from 'browser-request-utils';
 
   promiseAjax({
-    method = 'get',
-    url = 'https://www.npmjs.com/',
-    data = {
+    method: 'get',
+    url: 'https://www.npmjs.com/',
+    data: {
       mobile: 18165057632,
       page: 2
     },
@@ -95,7 +95,7 @@ interface IJsonpParams {
 
   jsonp({
     url: 'https://www.npmjs.com/package/browser-request-utils?',
-    charset = 'UTF-8',
+    charset: 'UTF-8',
     onsuccess: (res) => {
       console.log(res);
     },
