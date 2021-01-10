@@ -21,7 +21,7 @@ export function ajax({
 
   if (!url) { return; };
 
-  const dataArr = [];
+  const dataArr: string[] = [];
 
   for (const key in data) {
     if (data.hasOwnProperty(key)) {
